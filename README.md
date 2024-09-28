@@ -1,46 +1,28 @@
-# Getting Started with Create React App
+# 프리온보딩 FE 챌린지 10월 (2024) | 리액트 오픈소스 펼쳐보기
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 챌린지 과제 제출 방법
 
-## Available Scripts
+> 과제를 진행한 repository의 링크를 Gist Comment에 남겨주세요.
 
-In the project directory, you can run:
+## 챌린지 과제 내용
 
-### `npm start`
+1. 하나의 SinglePage에 Intersection Observer를 이용해 무한스크롤을 구현하세요.
+2. 현재 가져온 상품 리스트들의 액수들의 합계를 화면에 보여주세요 (ex. 현재 20개의 상품을 가져온 상태라면 20개 물품의 가격 총 합을 보여주면 됨)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 무한 스크롤의 조건
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. 페이지를 현재 보여주는 페이지의 최하단으로 이동 시 다음 페이지 정보를 가져오게 합니다.
+2. 더이상 가져올 수 없는 상황이라면 더 이상 데이터를 가져오는 함수를 호출하지 않습니다.
+3. 로딩 시 로딩 UI가 보여아 합니다. (UI의 형식은 자유)
 
-### `npm test`
+### 과제 유의 사항
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. React + 함수형 컴포넌트를 사용해서 개발해주세요
+2. 제공해드린 Mock 데이터는 수정 및 추가가 가능합니다.
+3. 무한스크롤 관련된 라이브러리 사용 절대 금지
+4. 비동기 상태 관리 라이브러리 사용 절대 금지 (ex. tanstack-query)
+5. 3, 4번 조건 외의 라이브러리는 자유롭게 사용하셔도 됩니다
 
-### `npm run build`
+### 첨부 코드
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+구현에만 집중할 수 있도록 mock 데이터와 호출용 promise 함수를 제공해 드리니 아래를 사용하시길 바랍니다.
